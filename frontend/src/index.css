@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* Animated gradient movement */
+@keyframes glowMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Input: Main animated glow */
+.animate-glow {
+  background: linear-gradient(270deg, #00ffff, #3b82f6, #9333ea);
+  background-size: 600% 600%;
+  animation: glowMove 4s ease infinite;
+  border-radius: 0.75rem;
+  filter: blur(8px);
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/* On focus: enhanced glow */
+.group:focus-within .animate-glow {
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80);
+  animation-duration: 2s;
+  opacity: 1;
+  filter: blur(10px);
+}
+
+/* Tone input glow */
+.animate-glow-tone {
+  background: linear-gradient(270deg, #f472b6, #facc15, #c084fc);
+  background-size: 600% 600%;
+  animation: glowMove 4s ease infinite;
+  filter: blur(8px);
+  border-radius: 0.75rem;
+  opacity: 0.6;
+  z-index: 0;
+  transition: all 0.5s ease;
+}
+
+/* Tone input on focus */
+.group:focus-within .animate-glow-tone {
+  background: linear-gradient(270deg, #fda4af, #fde68a, #e879f9);
+  animation-duration: 2s;
+  opacity: 1;
+  filter: blur(10px);
+}
+
+.bg-glow-radial {
+  background: radial-gradient(circle at center, #3b82f6, #8b5cf6, #ec4899, transparent);
+}
+
+/* Header glow animation */
+@keyframes pulseSlow {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.02);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulseSlow 6s ease-in-out infinite;
+}
