@@ -1,3 +1,5 @@
+
+https://github.com/user-attachments/assets/f8268107-a985-4a4d-ad2e-ab23bdb77b83
 # Smart Email Reply
 
 Smart Email Reply is a full-stack AI-powered application that helps you generate professional email replies quickly and easily. It features a modern React frontend and a Spring Boot backend that integrates with the Gemini API for AI-generated responses.
@@ -88,4 +90,8 @@ smart-email-reply/
 ## Tech Stack
 
 - **Frontend:** React, Vite, Tailwind CSS, Framer Motion, Styled Components
-- **Backend:** Spring Boot,
+- **Backend:** Spring Boot
+
+## Demo
+
+- Uploading VID-20250709-WA0001.mp4…
